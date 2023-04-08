@@ -1,0 +1,23 @@
+<p>book-detail works!</p>
+<p>{{errMessage}}</p>
+Book Id: <input type="text" #bookId value="b1"> <button
+        (click)="searchBook(bookId.value==undefined?'b1':bookId.value)">Search</button>
+<table>
+    <tr>
+        <td>Book Id:</td>
+        <td>{{book==undefined?'':book.BookId}}</td>
+    </tr>
+    <tr>
+        <td>Book Name:</td>
+        <td>{{book==undefined?'':book.BookName}}</td>
+    </tr>
+    <tr>
+        <td>Price:</td>
+        <td>{{book==undefined?'':book.Price}} </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img src="assets/book_images/{{book==undefined?'':book.Image}}">
+        </td>
+    </tr>
+</table>

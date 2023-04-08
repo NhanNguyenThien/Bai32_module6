@@ -1,0 +1,27 @@
+<p>fashion-detail works!</p>
+<p>{{errMessage}}</p>
+Fashion Id: <input type="text" #fashionID> <button
+        (click)="searchFashion(fashionID.value)">Search</button>
+<table>
+    <tr>
+        <td>Fashion Id:</td>
+        <td>{{fashion._id}}</td>
+    </tr>
+    <tr>
+        <td>Fashion Style:</td>
+        <td>{{fashion.style}}</td>
+    </tr>
+    <tr>
+        <td>Fashion Detail:</td>
+        <td>{{fashion.fashion_detail}} </td>
+    </tr>
+    <tr>
+        <td>Fashion Subject:</td>
+        <td>{{fashion.fashion_subject}} </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img src="{{fashion.fashion_image}}" width="100px" height="100px">
+        </td>
+    </tr>
+</table>
